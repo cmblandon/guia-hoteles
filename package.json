@@ -1,0 +1,19 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "guia hoteles",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmblandon/guia-hoteles.git"
+  },
+  "author": "Cristian Blandon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmblandon/guia-hoteles/issues"
+  },
+  "homepage": "https://github.com/cmblandon/guia-hoteles#readme"
+}
