@@ -20,13 +20,14 @@ footer{
 .card-hotel{
     margin-top: 10px;
     flex: 1 200px;
-    padding: 2px 5px 2px 5px;
     justify-content: space-between;
     flex-direction: column;
+    margin-left: 6px;
 }
 
 .btn-reserva{
   width: 100%;
+  border-radius: 0px;
 }
 
 .footer-address-icon{
