@@ -13,13 +13,6 @@ footer{
     margin-top: 10px;
 }
 
-a:link, a:visited {
-    color: white;
-    padding: 14px 25px;
-    text-decoration: none;
-    display: inline-block;
-  }
-
 .card-hotel{
     margin-top: 10px;
     flex: 1 200px;
@@ -29,13 +22,13 @@ a:link, a:visited {
 
 .btn-reserva{
     color: white;
-  width: 100%;
-  border-radius: 0px;
-  border-color: white;
-  background-color: #85144b;
-  text-decoration: none;
-  opacity: 0.6;
-  transition: 0.3s;
+    width: 100%;
+    border-radius: 0px;
+    border-color: white;
+    background-color: #85144b;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 0.3s;
 }
 .btn-reserva:hover {
     opacity: 1;
@@ -43,7 +36,7 @@ a:link, a:visited {
 }
 
 .footer-address-icon{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .icon, .span {
