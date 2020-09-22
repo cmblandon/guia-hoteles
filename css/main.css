@@ -42,3 +42,8 @@ footer{
 .icon, .span {
     color: white;
 }
+
+.img-carousel{
+    max-width: auto;
+    height: 400px;
+}
