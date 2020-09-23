@@ -194,10 +194,13 @@
           <p class="card-text">
             Aliquam eget sem non metus tincidunt aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce vel dapibus felis. Aliquam eu leo et eros lacinia feugiat sit amet non dui. Nulla egestas vel erat vel cursus. Maecenas accumsan vulputate auctor. In hac habitasse platea dictumst. Fusce semper neque et libero consectetur posuere. Cras eu faucibus elit. Nam sed nunc interdum, pharetra ante nec, posuere ligula. Sed aliquet nunc id elit sodales, a interdum felis fermentum. Donec tristique vulputate erat, a lacinia urna sodales nec.
           </p>
+          <div>
+            <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn"><span class="oi oi-plus"></span> Contacto</button>
+          </div>
         </div>
 
         <div>
-          <button class="btn btn-reserva" data-toggle="modal" data-target="#contacto"><span class="oi oi-plus"></span> Reservar</button>
+          <button class="btn btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
 
@@ -296,9 +299,25 @@
       $('[data-toggle="tooltip"]').tooltip();
       $('[data-toggle="popover"]').popover();
       $('.carousel').carousel({interval: 2000});
+      $('#contacto').on('show.bs.modal', function(e){
+        console.log('modal se está mostrando');
+        $('#contactoBtn').removeClass('btn-outline-success');
+        $('#contactoBtn').addClass('btn-primary');
+        $('#contactoBtn').prop('disabled', true);
+      });
+      $('#contacto').on('shown.bs.modal', function(e){
+        console.log('modal presentado');
+      });
+      $('#contacto').on('hide.bs.modal', function(e){
+        console.log('modal se oculta');
+      });
+      $('#contacto').on('hidden.bs.modal', function(e){
+        console.log('modal se ocultó');
+        $('#contactoBtn').prop('disabled', false);
+        $('#contactoBtn').removeClass('btn-primary');
+        $('#contactoBtn').addClass('btn-outline-success');
+      });
     });
-
-
   </script>
 </body>
 </html>
